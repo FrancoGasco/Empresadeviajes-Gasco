@@ -16,9 +16,12 @@
     column-gap: 20px;
     display: flex;
     justify-content: center;
-    
+    transition: all 3s;
 }
 
+.lista-header:hover{
+    transform: scale(1.2);
+}
 
 .headerIndex{
     background-color: rgb(233, 177, 156);
