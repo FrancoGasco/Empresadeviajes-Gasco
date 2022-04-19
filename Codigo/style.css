@@ -98,5 +98,22 @@ width: 25rem;
 
 /*Desktop*/
 @media screen and (min-width:969px) {
-    
+    .imgdiversiones{
+        transition: all 3s;
+    }
+    .imgdiversiones:hover{
+        transform: scale(1.5);
+    }
+    .imgmontaña{
+        transition: all 3s;
+    }
+    .imgmontaña:hover{
+        transform: scale(1.5);
+    }
+    .imgplaya{
+        transition: all 3s;
+    }
+    .imgplaya:hover{
+        transform: scale(1.5);
+    }
 }
