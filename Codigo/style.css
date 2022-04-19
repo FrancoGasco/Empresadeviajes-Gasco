@@ -6,7 +6,7 @@
 }
 
 
-.lista-header{
+.lista_header{
     list-style: none;
     font-weight: bold;
     background-color: rgb(255, 81, 0);
@@ -19,7 +19,7 @@
     transition: all 3s;
 }
 
-.lista-header:hover{
+.lista_header:hover{
     transform: scale(1.2);
 }
 
