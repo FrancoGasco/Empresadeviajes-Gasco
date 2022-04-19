@@ -92,8 +92,14 @@ width: 25rem;
 /*Mobile*/
     @media screen and (max-width: 490ox){
         body{
-            background-color: brown;
-        }
+            background-color: brown;}
+            .img-quienes-somos{
+                transition: all 3s;
+            }
+            .img-quienes-somos:hover{
+                transform: scale(1.5);
+            }
+        
     }
 
 /*Desktop*/
