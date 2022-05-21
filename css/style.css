@@ -4,18 +4,25 @@ header {
 header img {
   width: 20%;
 }
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .lista_header {
-  background-color: #212F3D;
+  background-color: #071d33;
 }
 
 section {
   background-color: #ABB2B9;
 }
+.imagenes-desc {
+  display: grid;
+  grid-template-areas: "card card card";
+  padding: 25px;
+}
+
+.quienes-index {
+  display: grid;
+  grid-template-areas: "quienes-index-titulo" "quienes-index-p";
+  padding: 30px;
+}
+
 footer {
   background-color: #212F3D;
 }

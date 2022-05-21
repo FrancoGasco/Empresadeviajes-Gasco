@@ -4,3 +4,17 @@ section{
         
     }
 }
+
+.imagenes-desc{
+    display: grid;
+    grid-template-areas: "card card card" ;
+    padding: 25px;
+}
+
+.quienes-index{
+    display: grid;
+    grid-template-areas: 
+    "quienes-index-titulo"
+    "quienes-index-p";
+    padding: 30px;
+}
