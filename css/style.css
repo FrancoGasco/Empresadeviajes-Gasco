@@ -4,18 +4,37 @@ header {
 header img {
   width: 20%;
 }
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .lista_header {
-  background-color: #212F3D;
+  background-color: #071d33;
 }
 
 section {
   background-color: #ABB2B9;
 }
+.imagenes-desc {
+  display: grid;
+  grid-template-areas: "card card card";
+  padding: 25px;
+}
+
+.quienes-index {
+  display: grid;
+  grid-template-areas: "quienes-index-titulo" "quienes-index-p";
+  padding: 30px;
+}
+
+.avion {
+  width: 40%;
+}
+
+.auto {
+  width: 37%;
+}
+
+.asistencia {
+  width: 37%;
+}
+
 footer {
   background-color: #212F3D;
 }
@@ -29,6 +48,96 @@ footer nav button {
   align-items: center;
   display: flex;
   width: 268px;
+}
+
+.footer-title {
+  color: #FFFFFF;
+}
+
+.form {
+  background-color: #212F3D;
+}
+
+body {
+  background: #000;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+#social-test h2 {
+  color: #fff;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 100;
+}
+#social-test .social {
+  padding-left: 0px;
+}
+#social-test li {
+  color: rgba(167, 146, 129, 0.6);
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 1%;
+  border: 1px solid rgba(167, 146, 129, 0.4);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease 0.3s;
+}
+#social-test li:hover {
+  color: rgb(167, 146, 129);
+  border: 1px solid rgb(167, 146, 129);
+}
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+
+.ig {
+  width: 60px;
+  margin-top: 4px;
+}
+
+.wpp {
+  width: 45px;
+  margin-top: 4px;
+}
+
+.face {
+  width: 60px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "mapa  form social  ";
+}
+
+.form {
+  margin-left: 250px;
+}
+
+.social {
+  background-color: #212F3D;
 }
 
 /*# sourceMappingURL=style.css.map */
