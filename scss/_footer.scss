@@ -15,4 +15,86 @@ footer{
                         }
                     }
                 }
-            
+
+.footer-title{
+    color: #FFFFFF;
+}
+
+.form{
+    background-color: #212F3D;
+}
+
+body {
+    background: #000;
+    width: 100%;
+    margin: 0 auto;}
+    .center {
+        display: table;
+        width: 100%;
+        height: 100vh;
+}
+#social-test {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 30px;
+h2 {
+    color: #fff;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
+}
+.social {
+    padding-left: 0px;
+        }
+li {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    border: 1px solid rgba(167, 146, 129, 0.4);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+&:hover {
+    color: rgba(167, 146, 129, 1);
+    border: 1px solid rgba(167, 146, 129, 1);
+    }
+}
+}
+.social:hover > li {
+    opacity: 0.5;
+}
+.social:hover > li:hover {
+    opacity: 1;
+}
+
+.ig{
+    width: 60px; 
+    margin-top: 4px;
+}
+.wpp{
+    width: 45px; 
+    margin-top: 4px;
+}
+.face{
+    width: 60px; 
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "mapa  form social  ";
+}
+ .form{
+     margin-left: 250px;
+ }
+
+ .social{
+     background-color: #212F3D;
+ }
