@@ -1,0 +1,48 @@
+.body-index{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media  screen and (max-width:800){
+    .body-index{
+        width: 100%;
+    }
+    
+    .imagenes-desc{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+
+/*Extra large device*/
+
+@media (max-width: 1200px){
+
+}
+
+/*large device*/
+@media (max-width: 992px) {
+    
+}
+
+/*medium device*/
+@media (max-width: 768px) {
+    .body-index{
+        grid-template-areas: 
+        "logo logo logo"
+        "lista-header lista-header lista-header"
+        "carrousel carrousel carrousel"
+        "card1 card1 card1"
+        "card2 card2 card2"
+        "card3 card3 card3"
+        "footer footer footer" ;
+    }
+}
+
+/*small devices*/
+@media (max-width: 576px){
+
+}
