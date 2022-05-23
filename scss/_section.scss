@@ -1,14 +1,12 @@
 section{
     background-color:#ABB2B9 ;
-    div{
-        
-    }
 }
 
 .imagenes-desc{
     display: grid;
-    grid-template-areas: "card card card" ;
+    grid-template-areas: "card1 card2 card3" ;
     padding: 25px;
+    flex-wrap: wrap;
 }
 
 .quienes-index{
@@ -16,7 +14,7 @@ section{
     grid-template-areas: 
     "quienes-index-titulo"
     "quienes-index-p";
-    padding: 30px;
+    padding: 3%;
 }
 .avion{
     width: 40%;
@@ -27,4 +25,93 @@ section{
 }
 .asistencia{
     width: 37%;
+}
+.img-quienes-somos{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+.img-somos{
+    width: 100%;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-quienes{
+    width: 85%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(27, 27, 27);
+}
+.conteiner {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: white;
+  width: 220px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image{
+  
+  
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+
+.card h2{
+  padding: 10px;
+}
+
+.card p{
+  padding: 10px;
+}
+
+.card a{
+  background-color: blue;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+
+.card:hover{
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+
+
+
+  /*card 2*/
+
+.grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color:#ABB2B9 ;
 }
