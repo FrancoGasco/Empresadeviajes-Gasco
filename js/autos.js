@@ -16,7 +16,7 @@ class autos {
 }
 
 const generarArray =()=>{
-    pasaje.push (new pasajes("Auto", dias, 50, 2000));
-    pasaje.push (new pasajes("Deportivo", dias, 15, 6000));
-    pasaje.push (new pasajes("Camioneta", dias, 25, 4000));
+    auto.push (new autos("Auto", dias, 50, 2000));
+    auto.push (new autos("Deportivo", dias, 15, 6000));
+    auto.push (new autos("Camioneta", dias, 25, 4000));
 }

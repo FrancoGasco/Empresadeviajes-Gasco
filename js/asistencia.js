@@ -1,5 +1,5 @@
 debugger
-class pasajes {
+class asistencias {
     constructor (tipo, dias, precio){
         this.tipo = tipo;
         this.dias = dias;
@@ -12,7 +12,7 @@ class pasajes {
 }
 
 const generarArray =()=>{
-    pasaje.push (new pasajes("Robo", 1, 8000));
-    pasaje.push (new pasajes("Todo riesgo", 1, 13000));
-    pasaje.push (new pasajes("Lesiones medicas", 1, 10000));
+    asistencia.push (new asistencias("Robo", 1, 8000));
+    asistencia.push (new asistencias("Todo riesgo", 1, 13000));
+    asistencia.push (new asistencias("Lesiones medicas", 1, 10000));
 }
