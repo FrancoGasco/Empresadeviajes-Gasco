@@ -20,6 +20,5 @@ const generarArray =()=>{
     auto.push (new autos("Deportivo", dias, 15, 6000));
     auto.push (new autos("Camioneta", dias, 25, 4000));
 }
-
 var tipo = document.getElementById("tipo")
 var dias = document.getElementById("dias")
