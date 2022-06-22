@@ -12,7 +12,10 @@ class asistencias {
 }
 
 const generarArray =()=>{
-    asistencia.push (new asistencias("Robo", 1, 8000));
-    asistencia.push (new asistencias("Todo riesgo", 1, 13000));
-    asistencia.push (new asistencias("Lesiones medicas", 1, 10000));
+    asistencia.push (new asistencias("Robo", dias, 8000));
+    asistencia.push (new asistencias("Todo riesgo", dias, 13000));
+    asistencia.push (new asistencias("Lesiones medicas", dias, 10000));
 }
+
+var tipo = document.getElementById("tipo")
+var dias = document.getElementById("dias")

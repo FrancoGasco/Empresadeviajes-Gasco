@@ -16,7 +16,10 @@ class pasajes {
 }
 
 const generarArray =()=>{
-    pasaje.push (new pasajes("Standard", 1, 250, 8000));
-    pasaje.push (new pasajes("VIP", 1, 25, 13000));
-    pasaje.push (new pasajes("Premium", 1, 100, 10000));
+    pasaje.push (new pasajes("Standard", cantidad, 250, 8000));
+    pasaje.push (new pasajes("VIP", cantidad, 25, 13000));
+    pasaje.push (new pasajes("Premium", cantidad, 100, 10000));
 }
+
+var tipo = document.getElementById("tipo")
+var cantidad = document.getElementById("cantidad")
