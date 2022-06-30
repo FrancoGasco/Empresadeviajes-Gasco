@@ -23,3 +23,8 @@ const generarArray =()=>{
 
 var tipo = document.getElementById("tipo")
 var cantidad = document.getElementById("cantidad")
+
+
+btnSubmit.addEventListener("mousemove", ()=> {
+    btnSubmit.title = "Complete los datos para que se pueda procesar su reserva"
+})

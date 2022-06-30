@@ -19,3 +19,7 @@ const generarArray =()=>{
 
 var tipo = document.getElementById("tipo")
 var dias = document.getElementById("dias")
+
+btnSubmit.addEventListener("mousemove", ()=> {
+    btnSubmit.title = "Complete los datos para que pueda contratar una asistencia"
+})
