@@ -29,3 +29,10 @@ const toastSA = (mensaje, bgColor, tiempo)=> {
         color: '#ffffff'
     })
 }
+
+const obtenerContenido = (URL)=> {
+        fetch(URL)
+           .then((response)=> response.json() )
+           .then( (data)=> {
+                console.table(data)
+})}
