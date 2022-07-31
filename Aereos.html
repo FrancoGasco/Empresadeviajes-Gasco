@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="multimededia/descarga.ico" type="image/x-icon">
 <!--JS-->
 <script src="js/pasaje.js"></script>
+<script src="js/variablesform.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!-- Sweet Alert -->
@@ -59,24 +60,46 @@
                 <span><i class="icon icon-user"></i></span>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control item" id="Cantidad" placeholder="Cantidad de pasajeros">
+                <input type="number" class="form-control item" id="Cantidad" placeholder="Cantidad de pasajeros" min="1" max="10">
             </div>
-            <div class="form-group">
-                <input type="password" class="form-control item" id="tipo" placeholder="Tipo de butaca">
+            <br>
+            <div class="col s10 m6 l4 center">
+                <select class="browser-default" id="selectTipoButaca">
+                  <option>Tipo de Butaca </option>
+                  <option value="0">VIP</option>
+                  <option value="0">Premium</option>
+                  <option value="0">Standard</option>
+                </select>
             </div>
+            <br>
             <div class="form-group">
-                <input type="text" class="form-control item" id="email" placeholder="Destino">
+                <select class="browser-default" id="selectlugarDestino">
+                  <option> Destino </option>
+                  <option value="0">Brasil</option>
+                  <option value="0">Mexico</option>
+                  <option value="0">Estados unidos</option>
+                  <option value="0">Italia</option>
+                </select>
             </div>
+            <br>
             <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Fecha de salida">
+                <input type="number" class="form-control item" id="dias" min="0" placeholder="Cantidad de dias">
             </div>
+            <br>
             <div class="form-group">
-                <input type="text" class="form-control item" id="birth-date" placeholder="Fecha de vuelta">
-            </div>
-            <div class="form-group">
-                <button type="button" id="Submit"class="btn btn-primary btn-sm">Buscar Disponibilidad</button>
+                <button type="button" id="btnDisponibilidad"class="btn btn-primary btn-sm">Cotizar Aereo</button>
             </div>
         </form>
+        <div id="resultadoCotizacion" class="wide-80 center blue lighten-2 z-depth-4">
+          <div class="row">
+            <div class="col s8 left">
+              <h4 class="black-text left-align">Cotizacion: </h4>
+            </div>
+            <div class="col s4 right">
+              <h4 id="valorViaje" class="yellow-text right-align">$ 0.00</h4>
+            </div>      
+          </div>
+        </div>
     <section> <br>
         </section>
         <footer class="footer">
@@ -116,8 +139,8 @@
                           <input class="app-form-control" placeholder="mensaje">
                         </div>
                         <div class="app-form-group buttons">
-                          <button class="app-form-button">CANCELAR</button>
-                          <button class="app-form-button">ENVIAR</button>
+                          <button class="app-form-button" type="reset">CANCELAR</button>
+                          <button class="app-form-button" type="submit">ENVIAR</button>
                         </div>
                       </div>
                     </div>

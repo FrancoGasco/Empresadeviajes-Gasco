@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="multimededia/descarga.ico" type="image/x-icon">
     <!--JS-->
     <script src="js/asistencia.js"></script>
+    <script src="js/variablesform.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!-- Sweet Alert -->
@@ -58,20 +59,30 @@
                     <div class="form-group">
                         <input type="text" class="form-control item" id="username" placeholder="Destino">
                     </div>
+                    <br>
                     <div class="form-group">
-                        <input type="password" class="form-control item" id="password" placeholder="Cantidad de pasajeros">
+                        <input type="number" class="form-control item" id="password" placeholder="Cantidad de pasajeros" min="1" max="10">
                     </div>
+                    <br>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="tipo" placeholder="Tipo de seguro">
-                    </div>
+                        <select class="browser-default" id="selectTipoButaca">
+                          <option>Tipo de Asistencia </option>
+                          <option value="0">Robo</option>
+                          <option value="0">Todo riesgo</option>
+                          <option value="0">Lesiones medicas</option>
+                        </select>
+                        </div>
+                        <br>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="dias" placeholder="dias">
+                        <input type="text" class="form-control item" id="dias" placeholder="Dias" min="0">
                     </div>
+                    <br>
                     <div class="form-group">
                         <input type="text" class="form-control item" id="birth-date" placeholder="Mail">
                     </div>
+                    <br>
                     <div class="form-group">
-                        <button type="button" id="submit" class="btn btn-primary btn-sm">Contratar</button>
+                        <button type="button" id="submit" class="btn btn-primary btn-sm">Cotizar Asistencia</button>
                     </div>
                 </form>
             <section>
