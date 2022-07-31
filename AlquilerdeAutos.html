@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="multimededia/descarga.ico" type="image/x-icon">
     <!--JS-->
     <script src="js/autos.js"></script>
+    <script src="js/variablesform.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!-- Sweet Alert -->
@@ -58,22 +59,34 @@
                     <span><i class="icon icon-user"></i></span>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control item" id="dias" placeholder="Cantidad de dias">
+                    <input type="number" class="form-control item" id="dias" placeholder="Cantidad de dias" min="0">
                 </div>
+                <br>
                 <div class="form-group">
-                    <input type="password" class="form-control item" id="personas" placeholder="Cantidad de personas">
+                    <input type="number" class="form-control item" id="personas" placeholder="Cantidad de personas" min="1" max="10">
                 </div>
+                <br>
                 <div class="form-group">
-                    <input type="text" class="form-control item" id="tipo" placeholder="Tipo de Auto">
+                  
+                    
+                      <select class="browser-default" id="selectTipoAuto">
+                        <option>Tipo de Auto </option>
+                        <option value="0">Deportivo</option>
+                        <option value="0">Camioneta</option>
+                        <option value="0">Auto</option>
+                      </select>
+                    
                 </div>
+                <br>
                 <div class="form-group">
                     <input type="text" class="form-control item" id="retiro" placeholder="Lugar de Retiro">
                 </div>
+                <br>
                 <div class="form-group">
                     <input type="text" class="form-control item" id="retorno" placeholder="Lugar de Retorno">
                 </div>
                 <div class="form-group">
-                    <button type="button" id="submit" class="btn btn-primary btn-sm">Buscar Auto</button>
+                    <button type="button" id="submit" class="btn btn-primary btn-sm">Cotizar Auto</button>
                 </div>
             </form>
             
