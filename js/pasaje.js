@@ -15,7 +15,7 @@ const cantidadDias = 25.6
 //Variables
 const selectlugarDestino = document.querySelector("#selectlugarDestino")
 const selectTipoButaca = document.querySelector("#selectTipoButaca")
-const numero = document.querySelector ("#cantidad")
+const cantidad = document.querySelector ("#cantidad")
 const dias = document.querySelector ("#dias")
 const btnDisponibilidad  = document.querySelector ("#btnDisponibilidad")
 const valorViaje = document.querySelector("#valorViaje")
@@ -29,8 +29,8 @@ class CotizadorBoletosAereos{
         this.cantidad = costoPersona
     }
     valorDePasaje(personas, factorButaca, factorDestino, dias){
-        let valorPolizaFinal = (parseFloat(this.cantidad) * parseInt(personas) * parseInt(dias) * parseFloat(factorButaca) * parseFloat (factorDestino)).toFixed(2)
-        return valorPolizaFinal || "Error"
+        let valorPolizaFinal = (parseFloat(this.cantidad) * parseInt(personas) * parseInt(dias) * parseFloat(factorButaca) * parseFloat (factorDestino))
+        return valorPolizaFinal 
     }
 }
 
@@ -59,17 +59,19 @@ const faltanCargarDatos = ()=> {
 }
 
 const muestroCotizacion = ()=> {
+    if(cantidad.value !==""){
     let pasajeros = cantidad.value
     let tipoBut = selectTipoButaca.value
     let lugarDest = selectlugarDestino.value
     let dia = dias.value
     let valorDeViaje = cotizador.valorDePasaje(pasajeros, tipoBut, lugarDest, dia)
         valorViaje.innerText = `$ ${valorDeViaje}`
+    }else{
+        alert("complete todos los dotos solicitados")
+    }
 }
 
-const cotizarDatosAereo = ()=> {
-    faltanCargarDatos() ? toastSA("Complete todos los datos solicitados.", 'darkred') : muestroCotizacion()
-}
+
 
 const toastSA = (mensaje, bgColor, tiempo)=> {
     Swal.fire({
